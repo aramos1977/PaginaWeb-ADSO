@@ -1,0 +1,309 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background: #c6cdcf;
+}
+.login_container{
+	block-size: auto;
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: #4093d7;
+  }
+
+  .container_Welcome{
+	padding: 20px;
+	color:#000000;
+	font-size: 20px;
+	
+  }
+
+.formulario {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+}
+
+.formulario__label {
+	display: block;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.formulario__grupo-input {
+	position: relative;
+	inline-size: 100%;
+	block-size: 20px;
+}
+
+.formulario__input {
+	inline-size: 100%;
+	background: #fff;
+	border: 3px solid transparent;
+	border-radius: 3px;
+	block-size: 45px;
+	line-height: 45px;
+	padding: 10px 40px 10px 10px;
+	transition: .3s ease all;
+}
+
+.formulario__input:focus {
+	border: 3px solid #0075FF;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+.formulario__input-error {
+	font-size: 12px;
+	margin-block-end: 0;
+	display: none;
+}
+
+.formulario__input-error-activo {
+	display: block;
+}
+
+.formulario__validacion-estado {
+	position: absolute;
+	inset-inline-end: 10px;
+	inset-block-end: 15px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
+
+.formulario__checkbox {
+	margin-inline-end: 10px;
+}
+
+.formulario__grupo-terminos, 
+.formulario__mensaje,
+.formulario__grupo-btn-enviar {
+	grid-column: span 2;
+}
+
+.formulario__mensaje {
+	block-size: 45px;
+	line-height: 45px;
+	background: #F66060;
+	padding: 0 15px;
+	border-radius: 3px;
+	display: none;
+}
+
+.formulario__mensaje-activo {
+	display: block;
+}
+
+.formulario__mensaje p {
+	margin: 0;
+}
+
+.formulario__grupo-btn-enviar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.formulario__btn {
+	block-size: 45px;
+	line-height: 45px;
+	inline-size: 30%;
+	background: #00bb2d  ;
+	color: #fffbfb;
+	font-weight: bold;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: .1s ease all;
+}
+
+.formulario__btn:hover {
+	box-shadow: 3px 0px 30px rgba(163,163,163, 1);
+}
+
+.formulario__mensaje-exito {
+	font-size: 25px;
+	color: #14640f;
+	display: none;
+
+}
+
+.formulario__mensaje-exito-activo {
+	display: block;
+}
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+.formulario__grupo-correcto .formulario__validacion-estado {
+	color: #18752e;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+	color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+	border: 3px solid #bb2929;
+}
+
+
+/* ----- -----  Mediaqueries ----- ----- */
+@media screen and (max-width: 400px) {
+	.formulario {
+		grid-template-columns: 1fr;
+	}
+
+	.formulario__grupo-terminos, 
+	.formulario__mensaje,
+	.formulario__grupo-btn-enviar {
+		grid-column: 1;
+	}
+
+	.formulario__btn {
+		inline-size: 100%;
+	}
+}
+/*                         FORMULARIO #2                      */
+.login{
+	background-image: linear-gradient(to bottom right, #1ab6b6, #4cac6e);
+	padding: 40px;
+	text-align: center;
+	inline-size: 400px;
+
+  }
+  
+  .login h2{
+	color: #fff;
+	margin-block-end: 45px;
+  }
+  
+  .login button i{
+	position: absolute;
+	inset-block-start: 12px; 
+	inset-inline-start: 12px;
+  }
+  
+  .login button{
+	inline-size: 100%;
+	margin: 15px 0px;
+	padding: 10px;
+	box-shadow: 0 0 3px 0 rgba(4, 4, 4, 0.2);
+	cursor: pointer;
+	position: relative;
+  }
+  
+  /* TAMAÑO LETRA */
+  
+  .login .fb{
+	background: #3dadee;
+	border-style: none;
+	color: #fff;
+	text-decoration: none;
+	font-size: 14px;
+  }
+  
+  .login .gm{
+	background: #e21313f9;
+	border-style: none;
+	color: #fff;
+	text-decoration: none;
+	font-size: 14px;
+  }
+  
+  .login .Email{
+	background: #0072C6;
+	border-style: none;
+	color: #fff;
+	text-decoration: none;
+	font-size: 14px;
+  }
+/*                 ICONOS                */
+
+.iconofb{
+	inline-size: 10%;
+	float: left;
+  }
+  
+  .iconogml{
+	inline-size: 10%;
+	float: left;
+  }
+  
+  .iconoEmail{
+	inline-size: 10%;
+	float: left;
+  }
+  @media only screen and ("max-inline-size": 400px){
+	.login-container{
+	  display: block;
+	}
+  
+	.register, .login{
+	  flex: none;
+	}
+  
+	.register::after{
+	  inset-block-start: unset;
+	  inset-block-end: -25px;
+	  inset-inline-start: 50%;
+	  transform: translateX(-50%) rotate(90deg);
+	}
+  }
+
+
+/* ------------------ FOOTER */
+
+ /* aca se works con el Footer - Pie de Pag */
+
+/* aca se works el color de los email */
+.email{
+  color: #1900fd;
+  font-size: 14px;
+}
+.email-educational{
+  color:#1900fd;
+}
+
+/* aca se works el color de los email */
+.container-contact{
+  background-color: #133e5d;
+  color:#fffdfd;
+  margin:0px;
+  inline-size: 100%;
+  padding:10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  text-align: start;
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  block-size: 60px;
+}
+
+/* aca se works con el footer o el pie de pag */
+footer {
+  background-color: #133e5d;
+  color:#f9f9f9;
+  inline-size: 100%;
+  margin:0px;
+  padding:20px 20px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-align: center;
+  display: grid;
+  align-items: center;
+  font-size: 16px;
+  block-size: 80%;
+}
+ 
