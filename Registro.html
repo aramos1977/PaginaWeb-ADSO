@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registro Bar Los Compitas</title>
+	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="css/registr.css">
+</head>
+<body>
+	<!-- Logo -->
+	<div class="container_Welcome">
+		<img class="logo" href="Logo Bar los Compitas" src="img/Logo.png">
+		<p>Welcome to the Los Compitas Bar</p>
+		<hr>
+	</div>
+		<div class="login_container">
+			<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+		<form action="" class="formulario" id="formulario">
+			<!-- Grupo: Usuario -->
+			<div class="formulario__grupo" id="grupo__usuario">
+				<label for="usuario" class="formulario__label">Usuario</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="alex">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+			</div>
+
+			<!-- Grupo: Empresa -->
+			<div class="formulario__grupo" id="grupo__empresa">
+				<label for="empresa" class="formulario__label">Empresa</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="empresa" id="empresa" placeholder="BarLosCompitas">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El Nombre de la Empresa campos obligatorios.</p>
+			</div>
+
+			<!-- Grupo: Nombre -->
+			<div class="formulario__grupo" id="grupo__nombre">
+				<label for="nombre" class="formulario__label">Nombre</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Alexander">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+			</div>
+			<!-- Grupo: Apellido -->
+			<div class="formulario__grupo" id="grupo__apellido">
+				<label for="apellido" class="formulario__label">Apellido</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" last name="apellido" id="apellido" placeholder="Ramos">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+			</div>
+
+			<!-- Grupo: Contraseña -->
+			<div class="formulario__grupo" id="grupo__password">
+				<label for="password" class="formulario__label">Contraseña</label>
+				<div class="formulario__grupo-input">
+					<input type="password" class="formulario__input" name="password" id="password" placeholder="********">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos una letra Mayusculas.</p>
+			</div>
+
+			<!-- Grupo: Contraseña 2 -->
+			<div class="formulario__grupo" id="grupo__password2">
+				<label for="password2" class="formulario__label">Repetir Contraseña</label>
+				<div class="formulario__grupo-input">
+					<input type="password" class="formulario__input" name="password2" id="password2" placeholder="********">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
+			</div>
+
+			<!-- Grupo: Correo Electronico -->
+			<div class="formulario__grupo" id="grupo__correo">
+				<label for="correo" class="formulario__label">Correo Electrónico</label>
+				<div class="formulario__grupo-input">
+					<input type="email" class="formulario__input" name="correo" id="correo" placeholder="corroe@email.com">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+			</div>
+
+			<!-- Grupo: Teléfono -->
+			<div class="formulario__grupo" id="grupo__telefono">
+				<label for="telefono" class="formulario__label">Teléfono</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="#">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 10 dígitos.</p>
+			</div>
+
+			<!-- Grupo: Terminos y Condiciones -->
+			<div class="formulario__grupo" id="grupo__terminos">
+				<label class="formulario__label">
+					<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+					Acepto los Terminos y Condiciones
+				</label>
+			</div>
+            
+			<!-- #BOTON ENVIAR -->
+			<div class="formulario__mensaje" id="formulario__mensaje">
+				<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+			</div>
+
+			<div class="formulario__grupo formulario__grupo-btn-enviar">
+				<button type="submit" class="formulario__btn">Enviar</button>
+				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+			</div>
+		</form>
+		<br>
+	
+	<!-- Formulario #2 -->
+                 
+	<div class="login">
+		<h2>Iniciar Sesión</h2>
+		<div class="login-items">
+		  <button class="fb"> <img class="iconofb" src="img/facebook.png" alt=""> <a href= "https://es-la.facebook.com" target="_blank" rel="noreferrer noopener" aria-label="enlace extern">Acceder con facebook</a></button>
+		  <button class="gm"> <img class="iconogml" src="img/gmail.png" alt=""> <a href= "https://www.google.com/intl/es/gmail/about/" target="_blank" rel="noreferrer noopener" aria-label="enlace extern"> Acceder con Gmail</a></button>
+		  <button class="Email"> <img class="iconoEmail" src="img/correo.png" alt=""> <a href= "https://outlook.live.com/owa/" target="_blank" rel="noreferrer noopener" aria-label="enlace extern"> Acceder con Correo </a></button>  
+		</div>
+	</div>
+</div>
+
+	<!-- ###  FOOTER #### -->
+<footer>
+	<section class="container-contact">
+	<ul>
+		<li>CONTACT</li>
+		<li>Alexander Ramos</li>
+		<li> <a href= https://outlook.live.com/owa/ class="email"  target="_blank" rel="noreferrer noopener" aria-label="enlace externo"> Email: alexander.rl12@hotmail.com </a></li>
+		<li>cell phone: It has a Virus </li>
+		<li>Bogotá</li>
+	</ul>
+	</section>      
+			<br>
+			<hr>
+		<div class="container-footer">
+			<div class="Copyright">
+				@ 2023 Todos los derechos Reservados| <a class="email-educational" href= https://oferta.senasofiaplus.edu.co/sofia-oferta/ target="_blank" rel="noreferrer noopener" aria-label="enlace externo"> Sena Sofia Plus </a>         
+			<div class="information">
+				Información Compañia| Privacion y Politicas | Terminos y Condiciones
+			</div> 
+			</div>
+		</div>
+</footer>
+<script src="js/formulario.js"></script>
+<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+</html>
